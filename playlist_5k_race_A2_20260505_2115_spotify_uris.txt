@@ -1,0 +1,18 @@
+# Paste these URIs into https://www.spotifyplaylist.net/
+# or open Spotify desktop → New Playlist → drag-import
+
+# --- WARMUP ---
+spotify:track:7xQAfvXzm3AkraOtGPWIZg
+spotify:track:2Fxmhks0bxGSBdJ92vM42m
+# --- BUILD ---
+spotify:track:6I3mqTwhRpn34SLVafSH7G
+spotify:track:7dt6x5M1jzdTEt8oCbisTK
+# --- GRIND ---
+spotify:track:7fBv7CLKzipRk6EC6TWHOB
+spotify:track:0e7ipj03S05BNilyu5bRzt
+# --- KICK ---
+spotify:track:5O2P9iiztwhomNh8xkR9lJ
+# --- COOLDOWN ---
+spotify:track:0mL82sxCRjrs3br407IdJh
+spotify:track:5mCPDVBb16L4XQwDdbRUpz
+spotify:track:1p0rEzrK7YtdRZVtiyV7RN

@@ -1,0 +1,30 @@
+Theory-Aware Playlist — 5K_RACE | Run A2
+Generated: 2026-05-06 20:49
+============================================================
+
+[WARMUP] — 2 tracks
+----------------------------------------
+  138 BPM | Major | key= 7 | energy=0.55 | Night Changes — One Direction
+  135 BPM | Major | key= 7 | energy=0.65 | bad guy — Billie Eilish
+
+[BUILD] — 2 tracks
+----------------------------------------
+  154 BPM | Major | key= 2 | energy=0.72 | Ghost — Justin Bieber
+  145 BPM | Major | key= 7 | energy=0.68 | Better Now — Post Malone
+
+[GRIND] — 2 tracks
+----------------------------------------
+  155 BPM | Minor | key= 9 | energy=0.74 | Headlines — Drake
+  160 BPM | Minor | key= 5 | energy=0.72 | rockstar — Post Malone
+
+[KICK] — 1 tracks
+----------------------------------------
+  178 BPM | Major | key= 8 | energy=0.82 | Kill Bill — SZA
+
+[COOLDOWN] — 3 tracks
+----------------------------------------
+  115 BPM | Major | key= 7 | energy=0.70 | Attention — Charlie Puth
+  112 BPM | Major | key=11 | energy=0.58 | Passionfruit — Drake
+  114 BPM | Major | key= 2 | energy=0.63 | Sunroof — Nicky Youre
+
+Total tracks: 10
