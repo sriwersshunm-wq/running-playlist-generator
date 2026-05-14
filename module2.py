@@ -21,13 +21,13 @@ RUN_ARCS = {
     ],
     'tempo': [
         {'phase':'warmup','bpm':(130,140),'mode':1,'energy':(0.55,0.65),'mins':10},
-        {'phase':'grind','bpm':(155,168),'mode':0,'energy':(0.40,0.90),'mins':25},
+        {'phase':'grind','bpm':(150,175),'mode':0,'energy':(0.40,0.90),'mins':25},
         {'phase':'cooldown','bpm':(110,125),'mode':1,'energy':(0.35,0.65),'mins':10},
     ],
     '5k_race': [
         {'phase':'warmup','bpm':(130,140),'mode':1,'energy':(0.55,0.65),'mins':5},
         {'phase':'build','bpm':(145,158),'mode':1,'energy':(0.65,0.75),'mins':7},
-        {'phase':'grind','bpm':(155,167),'mode':0,'energy':(0.40,0.90),'mins':6},
+        {'phase':'grind','bpm':(150,175),'mode':0,'energy':(0.40,0.90),'mins':6},
         {'phase':'kick','bpm':(168,186),'mode':1,'energy':(0.40,0.90),'mins':3},
         {'phase':'cooldown','bpm':(110,125),'mode':1,'energy':(0.35,0.70),'mins':9},
     ],
@@ -40,3 +40,4 @@ if __name__ == "__main__":
         for p in phases:
             print(f"  {p['phase']:10} | BPM {p['bpm'][0]}-{p['bpm'][1]} | {'Major' if p['mode']==1 else 'Minor'} | {p['mins']} min")
     print("\nCIRCLE OF FIFTHS loaded — adjacent keys for C (0):", CIRCLE_OF_FIFTHS[0])
+    
