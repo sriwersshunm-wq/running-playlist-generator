@@ -30,7 +30,7 @@ It outputs two files — a readable breakdown of the playlist by phase, and a Sp
 
 ## How the arc works (5K race example)
 
-The 5K arc has five phases: warmup (130–140 BPM, major), build (145–158 BPM, major), grind (155–167 BPM, minor), kick (168–186 BPM, major), cooldown (110–125 BPM, major).
+The 5K arc has five phases: warmup (130–140 BPM, major), build (145–158 BPM, major), grind (150–175 BPM, minor), kick (168–186 BPM, major), cooldown (110–125 BPM, major).
 
 The switch to minor during the grind is intentional — minor mode increases effort tolerance during the hardest segment. The return to major at maximum BPM for the kick creates a psychological release. Each phase picks songs in keys adjacent to the previous phase's ending key so the transitions stay smooth.
 
@@ -38,15 +38,28 @@ The switch to minor during the grind is intentional — minor mode increases eff
 
 ## Song database
 
-81 songs in `songs.csv`, all manually verified for BPM, key, and mode. Genre is mostly pop/hip-hop/R&B — The Weeknd, Drake, Travis Scott, Kendrick Lamar, Post Malone, Imagine Dragons, Eminem, Harry Styles, and others.
+85 songs in `songs.csv`, all manually verified for BPM, key, and mode on Tunebat. Genre is mostly pop/hip-hop/R&B — The Weeknd, Drake, Travis Scott, Kendrick Lamar, Post Malone, Imagine Dragons, Eminem, Harry Styles, and others.
 
 ---
 
 ## Validation
 
-I ran three sessions comparing theory-aware playlists against BPM-only control sessions, logging pace, heart rate, RPE (1–10), and flow score (1–10) after each run. Run 1 (easy, theory-aware) gave a flow score of 8 and RPE of 3.0 — the kick phase caused a spontaneous pace increase despite low perceived effort, which was the first sign the harmonic structure was doing something.
+I ran three sessions comparing theory-aware playlists against a random playlist control, logging pace, heart rate, RPE (1–10), and flow score (1–10) after each run.
 
-Results from all three runs are in `validation_data.csv`.
+| Condition | Avg Pace | Avg HR | Avg RPE | Avg Flow |
+|-----------|----------|--------|---------|----------|
+| Theory-aware (n=2) | 7:52/mi | 165 BPM | 4.5 | 8.0 |
+| Control (n=1) | 8:38/mi | 164 BPM | 3.0 | 6.0 |
+
+HR was nearly identical across all three runs, meaning the physiological load was the same. Theory-aware runs were 46 seconds per mile faster on average, and flow score was 2 points higher. Results from all sessions are in `validation_data.csv` and can be reproduced by running `python analysis.py`.
+
+---
+
+## Limitations and next steps
+
+This is a small self-experiment — 3 runs, 1 subject — so the results are interesting but not statistically conclusive. The control run was also longer than the theory-aware runs, so pace is used as the main comparison metric rather than total distance. A proper follow-up would test multiple subjects over more sessions, and add a third condition that matches BPM but randomizes key and mode, to isolate the music theory effect specifically.
+
+The Spotify API is also currently restricted for new apps, so playlists are exported as URI lists for manual import rather than created automatically.
 
 ---
 
@@ -59,7 +72,8 @@ running-playlist-generator/
 ├── module2.py           # Music theory rules + run arc definitions
 ├── module3.py           # Playlist builder
 ├── module4.py           # Exporter + session logger
-├── songs.csv            # 81-track song database
+├── analysis.py          # Validation data analysis
+├── songs.csv            # 85-track song database
 └── validation_data.csv  # Logged run sessions
 ```
 
